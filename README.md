@@ -196,9 +196,8 @@ Understand the Linux shell environment and user configuration.
 * PATH configuration
 * Shell customization
 
----
 
-# Skills Demonstrated
+**Skills Demonstrated .**
 
 * Linux User Administration
 * Group Management
@@ -213,24 +212,59 @@ Understand the Linux shell environment and user configuration.
 * Linux Command-Line Operations
 * Troubleshooting & Documentation
 
----
-
-# Documentation
-
-Each task contains detailed documentation, including:
-
-* Task Objective
-* Commands Executed
-* Command Explanations
-* Verification Output
-* Screenshots
-* Errors Encountered
-* Troubleshooting Steps
-* Key Learnings
-
----
-
-# Learning Outcome
+**Learning Outcome .**
 
 By completing this assessment, I gained practical experience with essential Linux administration tasks commonly used in DevOps environments. The exercises strengthened my understanding of Linux system management, command-line utilities, troubleshooting techniques, and documentation best practices.
 
+---
+
+# Week 2 Tasks : Linux Administration & Automation.
+
+## Task 9 - Systemd Service Managment.
+**Objective :**
+
+he goal of this task is to understand how to create and manage a custom systemd service in Linux. The service is designed to execute a shell script that periodically logs the current date and time, automatically restarts if it stops, and starts automatically whenever the system boots.
+
+**Overview .**
+
+In this task, I:
+
+- Created a shell script that appends the current date and time to a log file at regular intervals.
+- Created a custom systemd service to manage the script.
+- Configured the service to restart automatically using the Restart=always directive.
+- Enabled the service to start automatically after every system reboot.
+- Verified the service status and confirmed that log entries were being generated correctly.
+
+**Key Concepts learned .**
+
+Key Concepts Learned
+- Creating and managing custom systemd services.
+- Writing basic shell scripts for automation.
+- Configuring automatic service recovery.
+- Enabling services to start during system boot.
+- Monitoring service status and logs using systemctl and journalctl.
+
+**Outcome .**
+Successfully deployed a custom Linux service that continuously records timestamps to a log file, automatically recovers from failures, and runs persistently across system reboots.
+
+
+## Task 7 – Cron Job Scheduling
+
+## Objective
+
+This task demonstrates how to automate tasks in Linux using Cron Jobs. Different scheduling patterns are configured to execute commands automatically at predefined times.
+
+## What I Did
+
+- Opened the user's crontab using `crontab -e`.
+- Created a cron job that runs every minute.
+- Created a cron job that runs every 15 minutes.
+- Scheduled a cron job to execute every Monday.
+- Scheduled a cron job to run on the first day of every month.
+- Configured a cron job that executes automatically when the system starts using `@reboot`.
+- Verified all scheduled cron jobs using `crontab -l`.
+
+## Outcome
+
+Successfully learned Linux task scheduling using Cron. Different cron expressions were used to automate tasks at regular intervals, weekly, monthly, and during system startup. All scheduled jobs were verified using the `crontab -l` command, and each job appends a message to `cron_log.txt`, confirming successful execution.
+---
